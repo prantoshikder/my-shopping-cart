@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <section id="productCategoryArea">
+        <div class="container">
+            <div class="cart">
+                <div class="col-md-12 col-lg-10 mx-auto">
+                    <div id="cartItem" class="cart-item">
+                        <div class="row">
+                            <div class="col-md-7 center-item">
+                                <img src="images/product-1.png" alt="">
+                                <h5>iPhone 11 128GB Black</h5>
+                            </div>
+
+                            <div class="col-md-5 center-item">
+                                <div class="input-group number-spinner">
+                                    <button id="phoneDecrease" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                                    <input id="phoneCount" type="text" class="form-control text-center" value="0">
+                                    <button id="phoneIncrease" class="btn btn-default"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <h5>$ <span id="phonePrice">0</span></h5>
+                                <img id="phoneRemove" src="images/remove.png" alt="" class="remove-item">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="cartItems" class="cart-item">
+                        <div class="row">
+                            <div class="col-md-7 center-item mx-auto">
+                                <img src="images/product-2.png" alt="">
+                                <h5>iPhone 11 Silicone Case - Black</h5>
+                            </div>
+                            <div class="col-md-5 center-item">
+                                <div class="input-group number-spinner">
+                                    <button id="caseDecrease" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                                    <input id="caseCount" type="text" class="form-control text-center" value="0">
+                                    <button id="caseIncrease" class="btn btn-default"><i class="fas fa-plus"></i></button>
+
+                                </div>
+                                <h5>$ <span id="casePrice">0</span></h5>
+                                <img id="caseRemove" src="images/remove.png" alt="" class="remove-item">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="row">
+
+                            <div class="col-md-8">
+                                <h5>Subtotal: </h5>
+                                <h5>Tax:</h5>
+                                <h5>Total:</h5>
+                            </div>
+
+                            <div class="col-md-4 status">
+                                <h5>$ <span id="subTotal">0</span></h5>
+                                <h5>$ <span id="taxTotal">0</span></h5>
+                                <h5>$ <span id="totalAmount">0</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 pt-4 pb-4">
+                        <button id="checkOutBtn" type="button" class="btn btn-success check-out">Check Out</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="customerFriendly">
+        <div class="container">
+            <div class="welcomeArea">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="customerContent text-center">
+                            <h1>THANK YOU</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <br>Et aliquid tempora ipsum, suscipit dolor mollitia ratione dolorem a
+                                <br>laudantium in? Delectus reprehenderit harum, quae eius vitae iste totam soluta unde fuga,
+                                <br>eos repudiandae esse doloremque?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+</body>
+
+</html>
